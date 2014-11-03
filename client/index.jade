@@ -4,28 +4,27 @@ html(ng-app='portfolio', lang='en')
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    title Joy Pratt
+    title {{title}}
     link(href='/public/vendor/bootstrap/dist/css/bootstrap.css', rel='stylesheet')
     link(href='/public/index.css', rel='stylesheet')
 
-  body
+  body(ng-controller='HomeCtrl')
     .navbar.navbar-default(role='navigation')
       .container
         .navbar-header
           button.navbar-toggle(data-toggle='collapse', data-target='#bs-navbar-collapse')
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
           a.navbar-brand(href='/') {{title}}
 
         .collapse.navbar-collapse#bs-navbar-collapse
           ul.nav.navbar-nav.navbar-right
-            li: Home
-            li: About
-            li: Skills
-            li: Projects
-
+            li Home
+            li About
+            li Skills
+            li Projects
     .container
       .row
         .col-xs-12
@@ -36,4 +35,4 @@ html(ng-app='portfolio', lang='en')
     script(src='/public/vendor/angular-route/angular-route.js')
     script(src='/public/vendor/bootstrap/dist/js/bootstrap.js')
     script(src='/public/index.js')
-    script(src='/public/views/home/home.js')
+    script(src='/public/home.js')

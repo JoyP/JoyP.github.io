@@ -25,6 +25,10 @@ module.exports = function(grunt){
     },
     // ---------------------------------------------------------------------- //
     jade: {
+      options: {
+        pretty: true,
+        doctype: 'html'
+      },
       build: {
         files: [{
           cwd: 'client',
