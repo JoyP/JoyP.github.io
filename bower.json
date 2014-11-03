@@ -1,0 +1,13 @@
+{
+  "name": "JoyP.github.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/JoyP/JoyP.github.io",
+  "authors": [
+    "Joy Pratt <joympratt@gmail.com>"
+  ],
+  "description": "Joy Pratt",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+}
