@@ -3,6 +3,8 @@
 
   angular.module('portfolio')
   .controller('HomeCtrl', ['$scope', 'Home', function($scope, Home){
-    $scope.title = 'Joy Pratt';
+    Home.getMessage().then(function(response){
+      $scope.title = 'Joy Pratt';
+    });
   }]);
 })();
