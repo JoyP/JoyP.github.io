@@ -21,14 +21,20 @@ html(ng-app='portfolio', lang='en')
 
         .collapse.navbar-collapse#bs-navbar-collapse
           ul.nav.navbar-nav.navbar-right
-            li Home
-            li About
-            li Skills
-            li Projects
+            li.nav(ng-home) Home
+            li.nav(ng-about) About
+            li.nav(ng-skills) Skills
+            li.nav(ng-projects) Projects
     .container
       .row
-        .col-xs-12
-          h3 Portfolio
+        .col-xs-12(ng-show='about')
+          h3 About
+      .row
+        .col-xs-12(ng-show='skills')
+          h3 Skills
+      .row
+        .col-xs-12(ng-show='projects')
+          h3 Projects
 
     script(src='/public/vendor/jquery/dist/jquery.js')
     script(src='/public/vendor/angular/angular.js')
