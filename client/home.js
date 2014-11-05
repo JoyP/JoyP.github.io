@@ -10,28 +10,28 @@
     $scope.skills = false;
     $scope.projects = false;
 
-    $scope.home = function(){
+    $scope.showHome = function(){
       $scope.home = true;
       $scope.about = false;
       $scope.skills = false;
       $scope.projects = false;
     };
 
-    $scope.about = function(){
+    $scope.showAbout = function(){
       $scope.home = false;
       $scope.about = true;
       $scope.skills = false;
       $scope.projects = false;
     };
 
-    $scope.skills = function(){
+    $scope.showSkills = function(){
       $scope.home = false;
       $scope.about = false;
       $scope.skills = true;
       $scope.projects = false;
     };
 
-    $scope.projects = function(){
+    $scope.showProjects = function(){
       $scope.home = false;
       $scope.about = false;
       $scope.skills = false;

@@ -10,31 +10,63 @@ html(ng-app='portfolio', lang='en')
 
   body(ng-controller='HomeCtrl')
     .navbar.navbar-default(role='navigation')
-      .container
+      .container#navbar
         .navbar-header
           button.navbar-toggle(data-toggle='collapse', data-target='#bs-navbar-collapse')
-          span.sr-only Toggle navigation
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
           a.navbar-brand(href='/') {{title}}
 
         .collapse.navbar-collapse#bs-navbar-collapse
           ul.nav.navbar-nav.navbar-right
-            li.nav(ng-home) Home
-            li.nav(ng-about) About
-            li.nav(ng-skills) Skills
-            li.nav(ng-projects) Projects
+            li.nav(ng-click='showHome()') Home
+            li.nav(ng-click= 'showAbout()') About
+            li.nav(ng-click= 'showSkills()') Skills
+            li.nav(ng-click= 'showProjects()') Projects
     .container
       .row
-        .col-xs-12(ng-show='about')
+        .col-xs-4
+        .col-xs-4
+          h2 Joy Pratt
+          h3 Full Stack Developer
+          h4 Radiologic Technologist, R.T.(R)(M)
+        .col-xs-4
+    .container
+      .row(ng-show='about')
+        .col-xs-12
           h3 About
-      .row
-        .col-xs-12(ng-show='skills')
+      .row(ng-show='about')
+        .col-xs-2
+          a.thumbnail#photo
+            img(src='public/assets/joy.jpg')
+        .col-xs-10
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    .container
+      .row(ng-show='skills')
+        .col-xs-4
+        .col-xs-4
           h3 Skills
-      .row
-        .col-xs-12(ng-show='projects')
+          h4 Languages
+          h5 JavaScript, Node.js, AngularJS, HTML5, CSS, Jade
+          h4 Databases
+          h5 MongoDB, Access
+          h4 Tools
+          h5 Git, GitHub, Express, Vim, Atom, Grunt, Gulp
+          h4 Operating Systems
+          h5 Windows 8.1 and earlier, MacOS X and earlier
+          h4 Microsoft Office: Word, Excel, PowerPoint, Outlook, Project
+        .col-xs-4
+
+    .container
+      .row(ng-show='projects')
+        .col-xs-4
+        .col-xs-4
           h3 Projects
+          h4 Games- Group Projects
+          h5: a.thumbnail(href='http://joyp.github.io/pirateb/') Pirate's Booty
+          h5 Team Members: Adam Barnhard, Zoe Ames, Sarah Pearson
+          h5: a.thumbnail(href='http://joyp.github.io/z-chaser/') Burger Town
+          h5 Team Members: Dave Boling, Matt Keef
 
     script(src='/public/vendor/jquery/dist/jquery.js')
     script(src='/public/vendor/angular/angular.js')
