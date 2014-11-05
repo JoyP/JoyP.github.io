@@ -5,85 +5,138 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{title}}</title>
-    <link href="/public/vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/public/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="/public/index.css" rel="stylesheet">
   </head>
   <body ng-controller="HomeCtrl">
-    <div role="navigation" class="navbar navbar-default">
-      <div id="navbar" class="container">
-        <div class="navbar-header">
-          <button data-toggle="collapse" data-target="#bs-navbar-collapse" class="navbar-toggle"></button><a href="/" class="navbar-brand">{{title}}</a>
-        </div>
-        <div id="bs-navbar-collapse" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li ng-click="showHome()" class="nav">Home</li>
-            <li ng-click="showAbout()" class="nav">About</li>
-            <li ng-click="showSkills()" class="nav">Skills</li>
-            <li ng-click="showProjects()" class="nav">Projects</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="container">
+    <div id="title" class="container-fluid">
       <div class="row">
         <div class="col-xs-4"></div>
         <div class="col-xs-4">
-          <h2>Joy Pratt</h2>
-          <h3>Full Stack Developer</h3>
-          <h4>Radiologic Technologist, R.T.(R)(M)</h4>
+          <div class="span">&nbsp</div>
+          <h1>Joy Pratt</h1>
         </div>
         <div class="col-xs-4"></div>
       </div>
-    </div>
-    <div class="container">
-      <div ng-show="about" class="row">
+      <div class="row">
         <div class="col-xs-12">
-          <h3>About</h3>
+          <div class="span">&nbsp</div>
         </div>
       </div>
-      <div ng-show="about" class="row">
-        <div class="col-xs-2"><a id="photo" class="thumbnail"><img src="public/assets/joy.jpg"></a></div>
-        <div class="col-xs-10">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Full Stack Developer</h2>
+          <h3>Radiologic Technologist, R.T.(R)(M)</h3>
+        </div>
+      </div>
+    </div>
+    <div id="about" class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="span">&nbsp</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="span">&nbsp</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="span">&nbsp</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="span">&nbsp</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12"><img id="photo" src="public/assets/joy.jpg"></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="span">&nbsp</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="span">&nbsp</div>
+        </div>
+      </div>
+      <div class="row">
+        <div id="bio" class="col-xs-12">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
     </div>
-    <div class="container">
-      <div ng-show="skills" class="row">
-        <div class="col-xs-4"></div>
-        <div class="col-xs-4">
+    <div class="container-fluid">
+      <div class="row">
+        <div id="skills" class="col-xs-6">
           <h3>Skills</h3>
           <h4>Languages</h4>
-          <h5>JavaScript, Node.js, AngularJS, HTML5, CSS, Jade</h5>
+          <h5>
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>AngularJS</li>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>Jade</li>
+          </h5>
           <h4>Databases</h4>
-          <h5>MongoDB, Access</h5>
+          <h5> 
+            <li>MongoDB</li>
+            <li>Access</li>
+          </h5>
           <h4>Tools</h4>
-          <h5>Git, GitHub, Express, Vim, Atom, Grunt, Gulp</h5>
+          <h5> 
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Express</li>
+            <li>Vim</li>
+            <li>Atom</li>
+            <li>Grunt</li>
+            <li>Gulp</li>
+          </h5>
           <h4>Operating Systems</h4>
-          <h5>Windows 8.1 and earlier, MacOS X and earlier</h5>
-          <h4>Microsoft Office: Word, Excel, PowerPoint, Outlook, Project</h4>
+          <h5> 
+            <li>Windows 8.1 and earlier</li>
+            <li>MacOS X and earlier</li>
+          </h5>
+          <h4>Microsoft Office: </h4>
+          <h5> 
+            <li>Word</li>
+            <li>Excel</li>
+            <li>PowerPoint</li>
+            <li>Outlook</li>
+            <li>Project</li>
+          </h5>
         </div>
-        <div class="col-xs-4"></div>
-      </div>
-    </div>
-    <div class="container">
-      <div ng-show="projects" class="row">
-        <div class="col-xs-4"></div>
-        <div class="col-xs-4">
-          <h3>Projects</h3>
+        <div id="projects" class="col-xs-6">
+          <h3>Projects
+            <div class="span">&nbsp</div>
+          </h3>
           <h4>Games- Group Projects</h4>
           <h5><a href="http://joyp.github.io/pirateb/" class="thumbnail">Pirate's Booty</a></h5>
-          <h5>Team Members: Adam Barnhard, Zoe Ames, Sarah Pearson</h5>
+          <h5>Team Members: 
+            <li><a href="https://github.com/zoeames">Zoe Ames</a></li>
+            <li><a href="https://github.com/ABarnhard">Adam Barnhard</a></li>
+            <li><a href="https://github.com/SarahMPearson">Sarah Pearson</a></li>
+            <div class="spam">&nbsp</div>
+          </h5>
           <h5><a href="http://joyp.github.io/z-chaser/" class="thumbnail">Burger Town</a></h5>
-          <h5>Team Members: Dave Boling, Matt Keef</h5>
+          <h5>Team Members: 
+            <li><a href="https://github.com/kadowki">Dave Boling </a></li>
+            <li><a href="https://github.com/mkeef1">Matt Keef</a></li>
+          </h5>
         </div>
       </div>
     </div>
     <script src="/public/vendor/jquery/dist/jquery.js"></script>
-    <script src="/public/vendor/angular/angular.js"></script>
-    <script src="/public/vendor/angular-route/angular-route.js"></script>
-    <script src="/public/vendor/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/public/vendor/angular/angular.min.js"></script>
+    <script src="/public/vendor/angular-route/angular-route.min.js"></script>
+    <script src="/public/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/public/index.js"></script>
     <script src="/public/home.js"></script>
   </body>

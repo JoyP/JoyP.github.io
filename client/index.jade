@@ -5,72 +5,109 @@ html(ng-app='portfolio', lang='en')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     title {{title}}
-    link(href='/public/vendor/bootstrap/dist/css/bootstrap.css', rel='stylesheet')
+    link(href='/public/vendor/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
     link(href='/public/index.css', rel='stylesheet')
 
   body(ng-controller='HomeCtrl')
-    .navbar.navbar-default(role='navigation')
-      .container#navbar
-        .navbar-header
-          button.navbar-toggle(data-toggle='collapse', data-target='#bs-navbar-collapse')
-          a.navbar-brand(href='/') {{title}}
 
-        .collapse.navbar-collapse#bs-navbar-collapse
-          ul.nav.navbar-nav.navbar-right
-            li.nav(ng-click='showHome()') Home
-            li.nav(ng-click= 'showAbout()') About
-            li.nav(ng-click= 'showSkills()') Skills
-            li.nav(ng-click= 'showProjects()') Projects
-    .container
+    .container-fluid#title
       .row
         .col-xs-4
         .col-xs-4
-          h2 Joy Pratt
-          h3 Full Stack Developer
-          h4 Radiologic Technologist, R.T.(R)(M)
+          .span &nbsp
+          h1 Joy Pratt
         .col-xs-4
-    .container
-      .row(ng-show='about')
+      .row
         .col-xs-12
-          h3 About
-      .row(ng-show='about')
-        .col-xs-2
-          a.thumbnail#photo
-            img(src='public/assets/joy.jpg')
-        .col-xs-10
+          .span &nbsp
+      .row
+        .col-xs-12
+          h2 Full Stack Developer
+          h3 Radiologic Technologist, R.T.(R)(M)
+          
+    .container-fluid#about
+      .row
+        .col-xs-12
+          .span &nbsp
+      .row
+        .col-xs-12
+          .span &nbsp
+      .row
+        .col-xs-12
+          .span &nbsp
+      .row
+        .col-xs-12
+          .span &nbsp
+      .row
+        .col-xs-12
+          img#photo(src='public/assets/joy.jpg')
+      .row
+        .col-xs-12
+          .span &nbsp
+      .row
+        .col-xs-12
+          .span &nbsp
+        
+      .row
+        .col-xs-12#bio
           p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-    .container
-      .row(ng-show='skills')
-        .col-xs-4
-        .col-xs-4
+    .container-fluid
+      .row
+        .col-xs-6#skills
           h3 Skills
           h4 Languages
-          h5 JavaScript, Node.js, AngularJS, HTML5, CSS, Jade
+          h5
+            li JavaScript
+            li Node.js
+            li AngularJS
+            li HTML5
+            li CSS
+            li Jade
           h4 Databases
-          h5 MongoDB, Access
+          h5 
+            li MongoDB
+            li Access
           h4 Tools
-          h5 Git, GitHub, Express, Vim, Atom, Grunt, Gulp
+          h5 
+            li Git
+            li GitHub
+            li Express
+            li Vim
+            li Atom
+            li Grunt
+            li Gulp
           h4 Operating Systems
-          h5 Windows 8.1 and earlier, MacOS X and earlier
-          h4 Microsoft Office: Word, Excel, PowerPoint, Outlook, Project
-        .col-xs-4
-
-    .container
-      .row(ng-show='projects')
-        .col-xs-4
-        .col-xs-4
+          h5 
+            li Windows 8.1 and earlier
+            li MacOS X and earlier
+          h4 Microsoft Office: 
+          h5 
+            li Word
+            li Excel
+            li PowerPoint
+            li Outlook
+            li Project
+            
+        .col-xs-6#projects
           h3 Projects
+            .span &nbsp
           h4 Games- Group Projects
           h5: a.thumbnail(href='http://joyp.github.io/pirateb/') Pirate's Booty
-          h5 Team Members: Adam Barnhard, Zoe Ames, Sarah Pearson
+          h5 Team Members: 
+            li: a(href='https://github.com/zoeames') Zoe Ames
+            li: a(href='https://github.com/ABarnhard') Adam Barnhard
+            li: a(href='https://github.com/SarahMPearson') Sarah Pearson
+            .spam &nbsp
           h5: a.thumbnail(href='http://joyp.github.io/z-chaser/') Burger Town
-          h5 Team Members: Dave Boling, Matt Keef
+          h5 Team Members: 
+            li: a(href='https://github.com/kadowki') Dave Boling 
+            li: a(href='https://github.com/mkeef1') Matt Keef
 
     script(src='/public/vendor/jquery/dist/jquery.js')
-    script(src='/public/vendor/angular/angular.js')
-    script(src='/public/vendor/angular-route/angular-route.js')
-    script(src='/public/vendor/bootstrap/dist/js/bootstrap.js')
+    script(src='/public/vendor/angular/angular.min.js')
+    script(src='/public/vendor/angular-route/angular-route.min.js')
+    script(src='/public/vendor/bootstrap/dist/js/bootstrap.min.js')
     script(src='/public/index.js')
     script(src='/public/home.js')
