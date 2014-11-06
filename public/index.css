@@ -3,6 +3,28 @@
 body {
   background-color: #E2E2FF;
   font-family: 'Cardo', serif;
+  background-image: url('assets/flower.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+}
+h1 {
+  font-size: 4em;
+}
+h2 {
+  font-size: 3em;
+}
+h3 {
+  font-size: 2em;
+}
+h4 {
+  font-size: 1.5em;
+}
+h5 {
+  font-size: 1em;
 }
 ul .nav {
   padding: 15px;
@@ -12,9 +34,27 @@ ul .nav:hover {
   font-weight: bold;
 }
 #photo {
-  border-width: 2px;
+  height: 350px;
+  border: solid;
+  border-width: 1px;
   border-color: black;
-  border-radius: 50px;
+  border-radius: 100px;
+}
+#BT {
+  height: 200px;
+  width: 332px;
+  border-radius: 20px;
+  border: solid;
+  border-color: black;
+  border-width: 1px;
+}
+#PB {
+  height: 200px;
+  width: 332px;
+  border-radius: 20px;
+  border: solid;
+  border-color: black;
+  border-width: 1px;
 }
 #title {
   text-align: center;
