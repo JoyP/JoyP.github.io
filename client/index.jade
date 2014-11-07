@@ -37,9 +37,6 @@ html(ng-app='portfolio', lang='en')
           .span &nbsp
       .row
         .col-xs-12
-          .span &nbsp
-      .row
-        .col-xs-12
           img#photo(src='public/assets/joy.jpg')
       .row
         .col-xs-12
@@ -56,7 +53,7 @@ html(ng-app='portfolio', lang='en')
     .container-fluid
       .row
         .col-xs-1
-        .col-xs-5#skills
+        .col-xs-11.col-md-5#skills
           h3 Skills
           h4 Languages
           h5
@@ -91,26 +88,41 @@ html(ng-app='portfolio', lang='en')
             li Outlook
             li Project
             
-        .col-xs-6#projects
+        .col-xs-12.col-md-6#projects
           h3 Projects
             .span &nbsp
           h4 Games
           h5 Pirate's Booty
-          h5 (Made with Phaser and Javascript)
-          a(href='http://piratesbooty.joympratt.com')
-            img#BT(src='public/assets/piratesBooty.png')
-          h5 Team Members: 
-            li: a(href='https://github.com/zoeames') Zoe Ames
-            li: a(href='https://github.com/ABarnhard') Adam Barnhard
-            li: a(href='https://github.com/SarahMPearson') Sarah Pearson
-            .spam &nbsp
+            h5 (Made with Phaser and Javascript)
+            a(href='http://piratesbooty.joympratt.com')
+              img.project(src='public/assets/piratesBooty.png')
+            h5 Team Members: 
+              li: a(href='https://github.com/zoeames') Zoe Ames
+              li: a(href='https://github.com/ABarnhard') Adam Barnhard
+              li: a(href='https://github.com/SarahMPearson') Sarah Pearson
+            .span &nbsp
           h5 Burger Town
-          h5 (Made with Phaser and Javascript)
-          a(href='http://burgertown.joympratt.com')
-            img#PB(src='public/assets/burger-hotdog.jpg') 
-          h5 Team Members: 
-            li: a(href='https://github.com/kadowki') Dave Boling 
-            li: a(href='https://github.com/mkeef1') Matt Keef
+            h5 (Made with Phaser and Javascript)
+            a(href='http://burgertown.joympratt.com')
+              img.project(src='public/assets/burger-hotdog.jpg') 
+            h5 Team Members: 
+              li: a(href='https://github.com/kadowki') Dave Boling 
+              li: a(href='https://github.com/mkeef1') Matt Keef
+            
+          h4 Full Stack Apps: MongoDB, Express, AngularJS, Node.js
+          h5 Casual Jams
+            h5 Mid-term individual capstone
+            a(href='http://casualjams.joympratt.com')
+              img.project
+          h5 inTouch
+            h5 Mid-term group capstone
+            a(href='http://intouch.joympratt.com')
+              img.project
+            h5 Team Members:
+              li: a(href='https://github.com/MikeBBarreiro') Michael Barreiro
+              li: a(href='https://github.com/jbrooks036') JoAnn Brooks
+              li: a(href='https://github.com/SarahMPearson') Sarah Pearson
+              li: a(href='https://github.com/jessicafraines') Jessica Raines
 
     script(src='/public/vendor/jquery/dist/jquery.js')
     script(src='/public/vendor/angular/angular.min.js')

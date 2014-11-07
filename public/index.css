@@ -3,7 +3,7 @@
 body {
   background-color: #E2E2FF;
   font-family: 'Cardo', serif;
-  background-image: url('assets/flower.jpg');
+  background-image: url('assets/rose.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -38,17 +38,9 @@ ul .nav:hover {
   border: solid;
   border-width: 1px;
   border-color: black;
-  border-radius: 100px;
+  border-radius: 200px;
 }
-#BT {
-  height: 200px;
-  width: 332px;
-  border-radius: 20px;
-  border: solid;
-  border-color: black;
-  border-width: 1px;
-}
-#PB {
+.project {
   height: 200px;
   width: 332px;
   border-radius: 20px;
