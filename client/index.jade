@@ -6,6 +6,7 @@ html(ng-app='portfolio', lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     title {{title}}
     link(href='/public/vendor/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+    link(href='/public/font-awesome.min.css')
     link(href='/public/index.css', rel='stylesheet')
 
   body(ng-controller='HomeCtrl')
@@ -51,6 +52,16 @@ html(ng-app='portfolio', lang='en')
           p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
     .container-fluid
+      .row#contact
+        .col-xs-12
+          h4 Contact Me:
+          span &nbsp
+            span.fa.fa-github-2x: a(href='http://github.com/JoyP') Github
+            span.fa.fa-linkedin-square-2x: a(href='https://www.linkedin.com/in/joypratt') LinkedIn
+            span.fa.fa-twitter-2x: a(href='https://twitter.com/joympratt') Twitter
+            span.fa.fa-envelope-2x: a(href='mailto:joympratt@gmai.com') Email
+
+    .container-fluid
       .row#nav
         .col-xs-12
           span(ng-click='toggleHome()') All &nbsp
@@ -67,48 +78,45 @@ html(ng-app='portfolio', lang='en')
           span &nbsp
           h4 Games
           span &nbsp
-          h5 Pirate's Booty
-            h5 (Made with Phaser and Javascript)
-            a(href='http://piratesbooty.joympratt.com')
-              img.project(src='public/assets/piratesBooty.png')
-            h5 Team Members: 
-              li: a(href='https://github.com/zoeames') Zoe Ames
-              li: a(href='https://github.com/ABarnhard') Adam Barnhard
-              li: a(href='https://github.com/SarahMPearson') Sarah Pearson
-            span &nbsp
-          h5 Burger Town
-            h5 (Made with Phaser and Javascript)
-            a(href='http://burgertown.joympratt.com')
-              img.project(src='public/assets/burger-hotdog.jpg') 
-            h5 Team Members: 
-              li: a(href='https://github.com/kadowki') Dave Boling 
-              li: a(href='https://github.com/mkeef1') Matt Keef
-          span &nbsp
-          span &nbsp
+          .project
+            h5 Pirate's Booty
+              h5 (Made with Phaser and Javascript)
+              a(href='http://piratesbooty.joympratt.com')
+                img.projectImg(src='public/assets/piratesBooty.png')
+              h5 Team Members: 
+                li: a(href='https://github.com/zoeames') Zoe Ames
+                li: a(href='https://github.com/ABarnhard') Adam Barnhard
+                li: a(href='https://github.com/SarahMPearson') Sarah Pearson
+          .project
+            h5 Burger Town
+              h5 (Made with Phaser and Javascript)
+              a(href='http://burgertown.joympratt.com')
+                img.projectImg(src='public/assets/burger-hotdog.jpg') 
+              h5 Team Members: 
+                li: a(href='https://github.com/kadowki') Dave Boling 
+                li: a(href='https://github.com/mkeef1') Matt Keef
           
           h4 Full Stack Apps: MongoDB, Express, AngularJS, Node.js
           span &nbsp
 
-          h5 Casual Jams
-            h5 Mid-term individual capstone
-            a(href='http://casualjams.joympratt.com')
-              img.project(src='public/assets/casual-jams.jpg')
+          .project
+            h5 Casual Jams
+              h5 Mid-term individual capstone
+              a(href='http://casualjams.joympratt.com')
+                img.projectImg(src='public/assets/casual-jams.jpg')
 
-          span &nbsp;
-          span &nbsp;
-
-          h5 inTouch
-            h5 Mid-term group capstone
-            a(href='http://intouch.joympratt.com')
-              img.project
-            h5 Team Members:
-              li: a(href='https://github.com/MikeBBarreiro') Michael Barreiro
-              li: a(href='https://github.com/jbrooks036') JoAnn Brooks
-              li: a(href='https://github.com/SarahMPearson') Sarah Pearson
-              li: a(href='https://github.com/jessicafraines') Jessica Raines
-          span &nbsp
-          span &nbsp
-
+          
+          .project
+            h5 inTouch
+              h5 Mid-term group capstone
+              a(href='http://intouch.joympratt.com')
+                img.projectImg
+              h5 Team Members:
+                li: a(href='https://github.com/MikeBBarreiro') Michael Barreiro
+                li: a(href='https://github.com/jbrooks036') JoAnn Brooks
+                li: a(href='https://github.com/SarahMPearson') Sarah Pearson
+                li: a(href='https://github.com/jessicafraines') Jessica Raines
+                
       .row#skills(ng-show='showSkills')
         .col-xs-1
         .col-xs-11
@@ -122,10 +130,12 @@ html(ng-app='portfolio', lang='en')
             li HTML5
             li CSS
             li Jade
+          span &nbsp
           h4 Databases
           h5 
             li MongoDB
             li Access
+          span &nbsp
           h4 Tools
           h5 
             li Git
@@ -135,10 +145,12 @@ html(ng-app='portfolio', lang='en')
             li Atom
             li Grunt
             li Gulp
+          span &nbsp
           h4 Operating Systems
           h5 
             li Windows 8.1 and earlier
             li MacOS X and earlier
+          span &nbsp
           h4 Microsoft Office: 
           h5 
             li Word
@@ -166,11 +178,10 @@ html(ng-app='portfolio', lang='en')
 
           h4 Accomplishments
           span &nbsp
-
-          li Participated in the Vanderbilt Breast Center Diagnostic Management Team kick-off as a subject matter expert for mammography statistics
-          li Assisted the Vanderbilt Breast Analytics Team in determining how to extract meaningful data from different sources, including Imagecast (RIS), Starpanel (Electronic Medical Record), and billing information
-          li Daily in-depth use of multiple Vanderbilt systems: StarPanel, PowerScribe, Epic, Hologic systems and view-stations
-          li Expert user of the mammography module in General Electric’s Imagecast (Radiology Information System), implemented changes to create and sustain accurate data input and reporting
+            li Participated in the Vanderbilt Breast Center Diagnostic Management Team kick-off as a subject matter expert for mammography statistics
+            li Assisted the Vanderbilt Breast Analytics Team in determining how to extract meaningful data from different sources, including Imagecast (RIS), Starpanel (Electronic Medical Record), and billing information
+            li Daily in-depth use of multiple Vanderbilt systems: StarPanel, PowerScribe, Epic, Hologic systems and view-stations
+            li Expert user of the mammography module in General Electric’s Imagecast (Radiology Information System), implemented changes to create and sustain accurate data input and reporting
           span &nbsp
 
           h4 Professional Experience
@@ -181,50 +192,50 @@ html(ng-app='portfolio', lang='en')
           span &nbsp
 
           h5 Senior Specialty Technologist, December 2010– June 2014
-          li Super-user for Imagecast/Centricity, PowerScribe, and Hologic applications
-          li Trained and supported new and current users of all systems and applications in the Breast Center
-          li Coordinated between departments and support personnel to resolve any issues with PACS storage or retrieval
-          li Created, implemented, and monitored protocols and workflows, including system downtime, sub-optimal studies, technical repeats, data entry, reporting statistics, and patient follow-up
+            li Super-user for Imagecast/Centricity, PowerScribe, and Hologic applications
+            li Trained and supported new and current users of all systems and applications in the Breast Center
+            li Coordinated between departments and support personnel to resolve any issues with PACS storage or retrieval
+            li Created, implemented, and monitored protocols and workflows, including system downtime, sub-optimal studies, technical repeats, data entry, reporting statistics, and patient follow-up
             li Supervised a staff of 23 people
             li Assisted in managing patient and staff schedules
             li Compiled and calculated radiologists’ interpretive statistics semi-annually
             li Performed mammography examinations
-          li Performed data entry for imaging results, procedure information, and pathology results
-            span &nbsp
+            li Performed data entry for imaging results, procedure information, and pathology results
+          span &nbsp
 
-            h5 Mammographer, August 2007– December 2010
-          li Performed mammography examinations
-          li Performed data entry for imaging results, procedure information, and pathology results
-          li Assisted in administration tasks and file room coverage when needed
+          h5 Mammographer, August 2007– December 2010
+            li Performed mammography examinations
+            li Performed data entry for imaging results, procedure information, and pathology results
+            li Assisted in administration tasks and file room coverage when needed
           span &nbsp
 
           h5 Administrative Assistant/Patient Care Tech, April 2007– August 2007
             li Worked as a patient services representative (PSR)
-          li Performed a variety of job responsibilities while cross-training in mammography
+            li Performed a variety of job responsibilities while cross-training in mammography
           span &nbsp
 
           h4 Soldiers + Sailors Memorial Hospital, Wellsboro, PA
           h5 Radiologic Technologist, August, 2004– December 2006
           span &nbsp
-          li Performed radiologic procedures and provided patient care
-          li Responsibilities included working in the emergency room, operating room, nursing home, and outpatient radiology
-          li Performed film-screen radiography, CR, and DR, as well as fluoroscopy
+            li Performed radiologic procedures and provided patient care
+            li Responsibilities included working in the emergency room, operating room, nursing home, and outpatient radiology
+            li Performed film-screen radiography, CR, and DR, as well as fluoroscopy
 
           h4 Abstract: 
-          h5 Levy et al., 2014. A breast analytics dashboard to allow near-real-time visualization of quality assurance data. J Clin Oncol 32, 2014 (suppl 30; abstr 186)
+            h5 Levy et al., 2014. A breast analytics dashboard to allow near-real-time visualization of quality assurance data. J Clin Oncol 32, 2014 (suppl 30; abstr 186)
 
           h4 Presentation: 
           h5 “The Evolution of BI-RADS,” Middle Tennessee Mammography Society. Nashville, TN, March, 2014
-          li Approved for one category A continuing education credit through the American Registry of Radiologic Technologists (ARRT)
-          li Discussed the history of the Breast Imaging- Reporting and Data System (BI-RADS) and how the guidelines have changed with advances in data technology
-          li Gave a brief overview of benchmarking standards and metrics that mammography centers should calculate and monitor
+            li Approved for one category A continuing education credit through the American Registry of Radiologic Technologists (ARRT)
+            li Discussed the history of the Breast Imaging- Reporting and Data System (BI-RADS) and how the guidelines have changed with advances in data technology
+            li Gave a brief overview of benchmarking standards and metrics that mammography centers should calculate and monitor
 
           h4 Awards
-          li Mammographer of the Year at Vanderbilt Breast Center, 2010
-          li Siemen’s Medical Solutions Award of Excellence for Outstanding Academic Performance, 2004
+            li Mammographer of the Year at Vanderbilt Breast Center, 2010
+            li Siemen’s Medical Solutions Award of Excellence for Outstanding Academic Performance, 2004
           span &nbsp
           span &nbsp
-  footer.site-footer &copy 2014 &nbsp Joy Pratt
+    footer.site-footer &copy 2014 &nbsp Joy Pratt
 
     script(src='/public/vendor/jquery/dist/jquery.min.js')
     script(src='/public/vendor/angular/angular.min.js')

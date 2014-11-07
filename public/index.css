@@ -56,13 +56,38 @@ ul .nav:hover {
   margin: 10px;
   padding: 10px;
 }
-.project {
+#contact {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+#contact a {
+  margin: 20px;
+  padding: 10px;
+}
+.fa {
+  width: 30px;
+  height: 30px;
+}
+.projectImg {
   height: 200px;
   width: 332px;
   border-radius: 10px;
   border: solid;
   border-color: black;
   border-width: 1px;
+}
+.project {
+  border: 2px solid black;
+  background-color: #4C1A00;
+  margin: 20px;
+  padding: 20px;
+}
+.project h5 {
+  margin-top: 0;
 }
 #title {
   text-align: center;

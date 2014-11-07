@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{title}}</title>
     <link href="/public/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/public/font-awesome.min.css">
     <link href="/public/index.css" rel="stylesheet">
   </head>
   <body ng-controller="HomeCtrl">
@@ -54,6 +55,13 @@
       </div>
     </div>
     <div class="container-fluid">
+      <div id="contact" class="row">
+        <div class="col-xs-12">
+          <h4>Contact Me:</h4><span>&nbsp<span class="fa fa-github-2x"><a href="http://github.com/JoyP">Github</a></span><span class="fa fa-linkedin-square-2x"><a href="https://www.linkedin.com/in/joypratt">LinkedIn</a></span><span class="fa fa-twitter-2x"><a href="https://twitter.com/joympratt">Twitter</a></span><span class="fa fa-envelope-2x"><a href="mailto:joympratt@gmai.com">Email</a></span></span>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
       <div id="nav" class="row">
         <div class="col-xs-12"><span ng-click="toggleHome()">All &nbsp</span><span ng-click="toggleProjects()">Projects &nbsp</span><span ng-click="toggleSkills()">Skills &nbsp</span><span ng-click="toggleResume()">Resume &nbsp</span></div>
       </div>
@@ -64,34 +72,42 @@
         <div class="col-xs-11">
           <h3>Projects</h3><span>&nbsp</span><span>&nbsp</span>
           <h4>Games</h4><span>&nbsp</span>
-          <h5>Pirate's Booty
-            <h5>(Made with Phaser and Javascript)</h5><a href="http://piratesbooty.joympratt.com"><img src="public/assets/piratesBooty.png" class="project"></a>
-            <h5>Team Members: 
-              <li><a href="https://github.com/zoeames">Zoe Ames</a></li>
-              <li><a href="https://github.com/ABarnhard">Adam Barnhard</a></li>
-              <li><a href="https://github.com/SarahMPearson">Sarah Pearson</a></li>
-            </h5><span>&nbsp</span>
-          </h5>
-          <h5>Burger Town
-            <h5>(Made with Phaser and Javascript)</h5><a href="http://burgertown.joympratt.com"><img src="public/assets/burger-hotdog.jpg" class="project"></a>
-            <h5>Team Members: 
-              <li><a href="https://github.com/kadowki">Dave Boling </a></li>
-              <li><a href="https://github.com/mkeef1">Matt Keef</a></li>
+          <div class="project">
+            <h5>Pirate's Booty
+              <h5>(Made with Phaser and Javascript)</h5><a href="http://piratesbooty.joympratt.com"><img src="public/assets/piratesBooty.png" class="projectImg"></a>
+              <h5>Team Members: 
+                <li><a href="https://github.com/zoeames">Zoe Ames</a></li>
+                <li><a href="https://github.com/ABarnhard">Adam Barnhard</a></li>
+                <li><a href="https://github.com/SarahMPearson">Sarah Pearson</a></li>
+              </h5>
             </h5>
-          </h5><span>&nbsp</span><span>&nbsp</span>
+          </div>
+          <div class="project">
+            <h5>Burger Town
+              <h5>(Made with Phaser and Javascript)</h5><a href="http://burgertown.joympratt.com"><img src="public/assets/burger-hotdog.jpg" class="projectImg"></a>
+              <h5>Team Members: 
+                <li><a href="https://github.com/kadowki">Dave Boling </a></li>
+                <li><a href="https://github.com/mkeef1">Matt Keef</a></li>
+              </h5>
+            </h5>
+          </div>
           <h4>Full Stack Apps: MongoDB, Express, AngularJS, Node.js</h4><span>&nbsp</span>
-          <h5>Casual Jams
-            <h5>Mid-term individual capstone</h5><a href="http://casualjams.joympratt.com"><img src="public/assets/casual-jams.jpg" class="project"></a>
-          </h5><span>&nbsp;</span><span>&nbsp;</span>
-          <h5>inTouch
-            <h5>Mid-term group capstone</h5><a href="http://intouch.joympratt.com"><img class="project"></a>
-            <h5>Team Members:
-              <li><a href="https://github.com/MikeBBarreiro">Michael Barreiro</a></li>
-              <li><a href="https://github.com/jbrooks036">JoAnn Brooks</a></li>
-              <li><a href="https://github.com/SarahMPearson">Sarah Pearson</a></li>
-              <li><a href="https://github.com/jessicafraines">Jessica Raines</a></li>
+          <div class="project">
+            <h5>Casual Jams
+              <h5>Mid-term individual capstone</h5><a href="http://casualjams.joympratt.com"><img src="public/assets/casual-jams.jpg" class="projectImg"></a>
             </h5>
-          </h5><span>&nbsp</span><span>&nbsp</span>
+          </div>
+          <div class="project">
+            <h5>inTouch
+              <h5>Mid-term group capstone</h5><a href="http://intouch.joympratt.com"><img class="projectImg"></a>
+              <h5>Team Members:
+                <li><a href="https://github.com/MikeBBarreiro">Michael Barreiro</a></li>
+                <li><a href="https://github.com/jbrooks036">JoAnn Brooks</a></li>
+                <li><a href="https://github.com/SarahMPearson">Sarah Pearson</a></li>
+                <li><a href="https://github.com/jessicafraines">Jessica Raines</a></li>
+              </h5>
+            </h5>
+          </div>
         </div>
       </div>
       <div id="skills" ng-show="showSkills" class="row">
@@ -106,12 +122,12 @@
             <li>HTML5</li>
             <li>CSS</li>
             <li>Jade</li>
-          </h5>
+          </h5><span>&nbsp</span>
           <h4>Databases</h4>
           <h5> 
             <li>MongoDB</li>
             <li>Access</li>
-          </h5>
+          </h5><span>&nbsp</span>
           <h4>Tools</h4>
           <h5> 
             <li>Git</li>
@@ -121,12 +137,12 @@
             <li>Atom</li>
             <li>Grunt</li>
             <li>Gulp</li>
-          </h5>
+          </h5><span>&nbsp</span>
           <h4>Operating Systems</h4>
           <h5> 
             <li>Windows 8.1 and earlier</li>
             <li>MacOS X and earlier</li>
-          </h5>
+          </h5><span>&nbsp</span>
           <h4>Microsoft Office: </h4>
           <h5> 
             <li>Word</li>
@@ -149,59 +165,61 @@
           <h5>University of Phoenix, Nashville, TN</h5><span>&nbsp</span>
           <h5>Associates in Applied Science in Radiologic Technology, August 2004</h5>
           <h5>Mansfield University, Mansfield, PA</h5><span>&nbsp</span>
-          <h4>Accomplishments</h4><span>&nbsp</span>
-          <li>Participated in the Vanderbilt Breast Center Diagnostic Management Team kick-off as a subject matter expert for mammography statistics</li>
-          <li>Assisted the Vanderbilt Breast Analytics Team in determining how to extract meaningful data from different sources, including Imagecast (RIS), Starpanel (Electronic Medical Record), and billing information</li>
-          <li>Daily in-depth use of multiple Vanderbilt systems: StarPanel, PowerScribe, Epic, Hologic systems and view-stations</li>
-          <li>Expert user of the mammography module in General Electric’s Imagecast (Radiology Information System), implemented changes to create and sustain accurate data input and reporting</li><span>&nbsp</span>
+          <h4>Accomplishments</h4><span>&nbsp
+            <li>Participated in the Vanderbilt Breast Center Diagnostic Management Team kick-off as a subject matter expert for mammography statistics</li>
+            <li>Assisted the Vanderbilt Breast Analytics Team in determining how to extract meaningful data from different sources, including Imagecast (RIS), Starpanel (Electronic Medical Record), and billing information</li>
+            <li>Daily in-depth use of multiple Vanderbilt systems: StarPanel, PowerScribe, Epic, Hologic systems and view-stations</li>
+            <li>Expert user of the mammography module in General Electric’s Imagecast (Radiology Information System), implemented changes to create and sustain accurate data input and reporting</li></span><span>&nbsp</span>
           <h4>Professional Experience</h4><span>&nbsp</span>
           <h4>Vanderbilt Breast Center, Nashville, TN</h4>
           <h5>April 2007 - June 2014</h5><span>&nbsp</span>
-          <h5>Senior Specialty Technologist, December 2010– June 2014</h5>
-          <li>Super-user for Imagecast/Centricity, PowerScribe, and Hologic applications</li>
-          <li>Trained and supported new and current users of all systems and applications in the Breast Center</li>
-          <li>Coordinated between departments and support personnel to resolve any issues with PACS storage or retrieval</li>
-          <li>Created, implemented, and monitored protocols and workflows, including system downtime, sub-optimal studies, technical repeats, data entry, reporting statistics, and patient follow-up
+          <h5>Senior Specialty Technologist, December 2010– June 2014
+            <li>Super-user for Imagecast/Centricity, PowerScribe, and Hologic applications</li>
+            <li>Trained and supported new and current users of all systems and applications in the Breast Center</li>
+            <li>Coordinated between departments and support personnel to resolve any issues with PACS storage or retrieval</li>
+            <li>Created, implemented, and monitored protocols and workflows, including system downtime, sub-optimal studies, technical repeats, data entry, reporting statistics, and patient follow-up</li>
             <li>Supervised a staff of 23 people</li>
             <li>Assisted in managing patient and staff schedules</li>
             <li>Compiled and calculated radiologists’ interpretive statistics semi-annually</li>
             <li>Performed mammography examinations</li>
-          </li>
-          <li>Performed data entry for imaging results, procedure information, and pathology results<span>&nbsp</span>
-            <h5>Mammographer, August 2007– December 2010</h5>
-          </li>
-          <li>Performed mammography examinations</li>
-          <li>Performed data entry for imaging results, procedure information, and pathology results</li>
-          <li>Assisted in administration tasks and file room coverage when needed</li><span>&nbsp</span>
+            <li>Performed data entry for imaging results, procedure information, and pathology results</li>
+          </h5><span>&nbsp</span>
+          <h5>Mammographer, August 2007– December 2010
+            <li>Performed mammography examinations</li>
+            <li>Performed data entry for imaging results, procedure information, and pathology results</li>
+            <li>Assisted in administration tasks and file room coverage when needed</li>
+          </h5><span>&nbsp</span>
           <h5>Administrative Assistant/Patient Care Tech, April 2007– August 2007
             <li>Worked as a patient services representative (PSR)</li>
-          </h5>
-          <li>Performed a variety of job responsibilities while cross-training in mammography</li><span>&nbsp</span>
+            <li>Performed a variety of job responsibilities while cross-training in mammography</li>
+          </h5><span>&nbsp</span>
           <h4>Soldiers + Sailors Memorial Hospital, Wellsboro, PA</h4>
-          <h5>Radiologic Technologist, August, 2004– December 2006</h5><span>&nbsp</span>
-          <li>Performed radiologic procedures and provided patient care</li>
-          <li>Responsibilities included working in the emergency room, operating room, nursing home, and outpatient radiology</li>
-          <li>Performed film-screen radiography, CR, and DR, as well as fluoroscopy</li>
-          <h4>Abstract: </h4>
-          <h5>Levy et al., 2014. A breast analytics dashboard to allow near-real-time visualization of quality assurance data. J Clin Oncol 32, 2014 (suppl 30; abstr 186)</h5>
+          <h5>Radiologic Technologist, August, 2004– December 2006</h5><span>&nbsp
+            <li>Performed radiologic procedures and provided patient care</li>
+            <li>Responsibilities included working in the emergency room, operating room, nursing home, and outpatient radiology</li>
+            <li>Performed film-screen radiography, CR, and DR, as well as fluoroscopy</li></span>
+          <h4>Abstract: 
+            <h5>Levy et al., 2014. A breast analytics dashboard to allow near-real-time visualization of quality assurance data. J Clin Oncol 32, 2014 (suppl 30; abstr 186)</h5>
+          </h4>
           <h4>Presentation: </h4>
-          <h5>“The Evolution of BI-RADS,” Middle Tennessee Mammography Society. Nashville, TN, March, 2014</h5>
-          <li>Approved for one category A continuing education credit through the American Registry of Radiologic Technologists (ARRT)</li>
-          <li>Discussed the history of the Breast Imaging- Reporting and Data System (BI-RADS) and how the guidelines have changed with advances in data technology</li>
-          <li>Gave a brief overview of benchmarking standards and metrics that mammography centers should calculate and monitor</li>
-          <h4>Awards</h4>
-          <li>Mammographer of the Year at Vanderbilt Breast Center, 2010</li>
-          <li>Siemen’s Medical Solutions Award of Excellence for Outstanding Academic Performance, 2004</li><span>&nbsp</span><span>&nbsp</span>
+          <h5>“The Evolution of BI-RADS,” Middle Tennessee Mammography Society. Nashville, TN, March, 2014
+            <li>Approved for one category A continuing education credit through the American Registry of Radiologic Technologists (ARRT)</li>
+            <li>Discussed the history of the Breast Imaging- Reporting and Data System (BI-RADS) and how the guidelines have changed with advances in data technology</li>
+            <li>Gave a brief overview of benchmarking standards and metrics that mammography centers should calculate and monitor</li>
+          </h5>
+          <h4>Awards
+            <li>Mammographer of the Year at Vanderbilt Breast Center, 2010</li>
+            <li>Siemen’s Medical Solutions Award of Excellence for Outstanding Academic Performance, 2004</li>
+          </h4><span>&nbsp</span><span>&nbsp</span>
         </div>
       </div>
     </div>
-  </body>
-  <footer class="site-footer">&copy 2014 &nbsp Joy Pratt
+    <footer class="site-footer">&copy 2014 &nbsp Joy Pratt</footer>
     <script src="/public/vendor/jquery/dist/jquery.min.js"></script>
     <script src="/public/vendor/angular/angular.min.js"></script>
     <script src="/public/vendor/angular-route/angular-route.min.js"></script>
     <script src="/public/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/public/index.js"></script>
     <script src="/public/home.js"></script>
-  </footer>
+  </body>
 </html>
