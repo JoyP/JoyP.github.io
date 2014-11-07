@@ -45,8 +45,8 @@ ul .nav:hover {
   border-radius: 200px;
 }
 #nav {
-  margin: 10px;
-  padding: 10px;
+  margin: 20px;
+  padding: 20px;
   text-align: center;
   font-family: 'Noto Sans', sans-serif;
   font-size: 1.8em;
@@ -57,20 +57,18 @@ ul .nav:hover {
   padding: 10px;
 }
 #contact {
-  margin: 10px;
+  margin: 5px;
   padding: 10px;
   text-align: center;
   font-family: 'Noto Sans', sans-serif;
   font-size: 1.2em;
   font-weight: 400;
 }
-#contact a {
-  margin: 20px;
-  padding: 10px;
+.links h4 {
+  padding: 20px;
 }
-.fa {
-  width: 30px;
-  height: 30px;
+.links span {
+  padding: 20px;
 }
 .projectImg {
   height: 200px;
