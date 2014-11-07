@@ -44,6 +44,18 @@ ul .nav:hover {
   border-color: black;
   border-radius: 200px;
 }
+#nav {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.8em;
+  font-weight: 400;
+}
+#nav span {
+  margin: 10px;
+  padding: 10px;
+}
 .project {
   height: 200px;
   width: 332px;
@@ -66,6 +78,10 @@ ul .nav:hover {
 #projects {
   font-family: 'Noto Sans', sans-serif;
 }
+#resume {
+  font-family: 'Cardo', serif;
+  font-weight: 400;
+}
 html,
 body {
   height: 100%;
@@ -78,4 +94,5 @@ body {
   font-size: .8em;
   font-weight: 400;
   text-align: center;
+  padding: 10px;
 }
