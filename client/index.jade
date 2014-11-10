@@ -81,7 +81,7 @@ html(ng-app='portfolio', lang='en')
           .project
             h5 Pirate's Booty
               h5 (Made with Phaser and Javascript)
-              a(href='http://piratesbooty.joympratt.com')
+              a(href='http://portfolio.joympratt.com/pirateb')
                 img.projectImg(src='public/assets/PiratesBooty.png')
               h5 Team Members: 
                 li: a(href='https://github.com/zoeames') Zoe Ames
@@ -90,7 +90,7 @@ html(ng-app='portfolio', lang='en')
           .project
             h5 Burger Town
               h5 (Made with Phaser and Javascript)
-              a(href='http://burgertown.joympratt.com')
+              a(href='http://portfolio.joympratt.com/z-chaser')
                 img.projectImg(src='public/assets/burger-hotdog.jpg') 
               h5 Team Members: 
                 li: a(href='https://github.com/kadowki') Dave Boling 
@@ -110,7 +110,7 @@ html(ng-app='portfolio', lang='en')
             h5 inTouch
               h5 Mid-term group capstone
               a(href='http://intouch.joympratt.com')
-                img.projectImg
+                img.projectImg(src='public/assets/inTouch.png')
               h5 Team Members:
                 li: a(href='https://github.com/MikeBBarreiro') Michael Barreiro
                 li: a(href='https://github.com/jbrooks036') JoAnn Brooks
@@ -120,120 +120,124 @@ html(ng-app='portfolio', lang='en')
       .row#skills(ng-show='showSkills')
         .col-xs-1
         .col-xs-11
-          h3 Skills
-          span &nbsp
-          h4 Languages
-          h5
-            li JavaScript
-            li Node.js
-            li AngularJS
-            li HTML5
-            li CSS
-            li Jade
-          span &nbsp
-          h4 Databases
-          h5 
-            li MongoDB
-            li Access
-          span &nbsp
-          h4 Tools
-          h5 
-            li Git
-            li GitHub
-            li Express
-            li Vim
-            li Atom
-            li Grunt
-            li Gulp
-          span &nbsp
-          h4 Operating Systems
-          h5 
-            li Windows 8.1 and earlier
-            li MacOS X and earlier
-          span &nbsp
-          h4 Microsoft Office: 
-          h5 
-            li Word
-            li Excel
-            li PowerPoint
-            li Outlook
-            li Project
-          span &nbsp
-          span &nbsp
+          .skill
+            h3 Skills
+            span &nbsp
+            h4 Languages
+            h5
+              li JavaScript
+              li Node.js
+              li AngularJS
+              li HTML5
+              li CSS
+              li Jade
+            span &nbsp
+            h4 Databases
+            h5 
+              li MongoDB
+              li Access
+            span &nbsp
+            h4 Tools
+            h5 
+              li Git
+              li GitHub
+              li Express
+              li Vim
+              li Atom
+              li Grunt
+              li Gulp
+            span &nbsp
+            h4 Operating Systems
+            h5 
+              li Windows 8.1 and earlier
+              li MacOS X and earlier
+            span &nbsp
+            h4 Microsoft Office: 
+            h5 
+              li Word
+              li Excel
+              li PowerPoint
+              li Outlook
+              li Project
+            span &nbsp
+            span &nbsp
           
     .container-fluid
       .row#resume(ng-show='showResume')
         .col-xs-1
         .col-xs-11
-          h4 Education
-          h5 In progress, member of Cohort 6
-          h5 Nashville Software School, Nashville, TN
-          span &nbsp
-          h5 In progress, majoring in Information Technology
-          h5 University of Phoenix, Nashville, TN
-          span &nbsp
-          h5 Associates in Applied Science in Radiologic Technology, August 2004
-          h5 Mansfield University, Mansfield, PA
-          span &nbsp
+          .res
+            h3 Resume
+            span &nbsp
+            h4 Education
+            h5 In progress, member of Cohort 6
+            h5 Nashville Software School, Nashville, TN
+            span &nbsp
+            h5 In progress, majoring in Information Technology
+            h5 University of Phoenix, Nashville, TN
+            span &nbsp
+            h5 Associates in Applied Science in Radiologic Technology, August 2004
+            h5 Mansfield University, Mansfield, PA
+            span &nbsp
 
-          h4 Accomplishments
-          span &nbsp
-            li Participated in the Vanderbilt Breast Center Diagnostic Management Team kick-off as a subject matter expert for mammography statistics
-            li Assisted the Vanderbilt Breast Analytics Team in determining how to extract meaningful data from different sources, including Imagecast (RIS), Starpanel (Electronic Medical Record), and billing information
-            li Daily in-depth use of multiple Vanderbilt systems: StarPanel, PowerScribe, Epic, Hologic systems and view-stations
-            li Expert user of the mammography module in General Electric’s Imagecast (Radiology Information System), implemented changes to create and sustain accurate data input and reporting
-          span &nbsp
+            h4 Accomplishments
+            span &nbsp
+              li Participated in the Vanderbilt Breast Center Diagnostic Management Team kick-off as a subject matter expert for mammography statistics
+              li Assisted the Vanderbilt Breast Analytics Team in determining how to extract meaningful data from different sources, including Imagecast (RIS), Starpanel (Electronic Medical Record), and billing information
+              li Daily in-depth use of multiple Vanderbilt systems: StarPanel, PowerScribe, Epic, Hologic systems and view-stations
+              li Expert user of the mammography module in General Electric’s Imagecast (Radiology Information System), implemented changes to create and sustain accurate data input and reporting
+            span &nbsp
 
-          h4 Professional Experience
-          span &nbsp
+            h4 Professional Experience
+            span &nbsp
 
-          h4 Vanderbilt Breast Center, Nashville, TN
-          h5 April 2007 - June 2014
-          span &nbsp
+            h4 Vanderbilt Breast Center, Nashville, TN
+            h5 April 2007 - June 2014
+            span &nbsp
 
-          h5 Senior Specialty Technologist, December 2010– June 2014
-            li Super-user for Imagecast/Centricity, PowerScribe, and Hologic applications
-            li Trained and supported new and current users of all systems and applications in the Breast Center
-            li Coordinated between departments and support personnel to resolve any issues with PACS storage or retrieval
-            li Created, implemented, and monitored protocols and workflows, including system downtime, sub-optimal studies, technical repeats, data entry, reporting statistics, and patient follow-up
-            li Supervised a staff of 23 people
-            li Assisted in managing patient and staff schedules
-            li Compiled and calculated radiologists’ interpretive statistics semi-annually
-            li Performed mammography examinations
-            li Performed data entry for imaging results, procedure information, and pathology results
-          span &nbsp
+            h5 Senior Specialty Technologist, December 2010– June 2014
+              li Super-user for Imagecast/Centricity, PowerScribe, and Hologic applications
+              li Trained and supported new and current users of all systems and applications in the Breast Center
+              li Coordinated between departments and support personnel to resolve any issues with PACS storage or retrieval
+              li Created, implemented, and monitored protocols and workflows, including system downtime, sub-optimal studies, technical repeats, data entry, reporting statistics, and patient follow-up
+              li Supervised a staff of 23 people
+              li Assisted in managing patient and staff schedules
+              li Compiled and calculated radiologists’ interpretive statistics semi-annually
+              li Performed mammography examinations
+              li Performed data entry for imaging results, procedure information, and pathology results
+            span &nbsp
 
-          h5 Mammographer, August 2007– December 2010
-            li Performed mammography examinations
-            li Performed data entry for imaging results, procedure information, and pathology results
-            li Assisted in administration tasks and file room coverage when needed
-          span &nbsp
+            h5 Mammographer, August 2007– December 2010
+              li Performed mammography examinations
+              li Performed data entry for imaging results, procedure information, and pathology results
+              li Assisted in administration tasks and file room coverage when needed
+            span &nbsp
 
-          h5 Administrative Assistant/Patient Care Tech, April 2007– August 2007
-            li Worked as a patient services representative (PSR)
-            li Performed a variety of job responsibilities while cross-training in mammography
-          span &nbsp
+            h5 Administrative Assistant/Patient Care Tech, April 2007– August 2007
+              li Worked as a patient services representative (PSR)
+              li Performed a variety of job responsibilities while cross-training in mammography
+            span &nbsp
 
-          h4 Soldiers + Sailors Memorial Hospital, Wellsboro, PA
-          h5 Radiologic Technologist, August, 2004– December 2006
-          span &nbsp
-            li Performed radiologic procedures and provided patient care
-            li Responsibilities included working in the emergency room, operating room, nursing home, and outpatient radiology
-            li Performed film-screen radiography, CR, and DR, as well as fluoroscopy
+            h4 Soldiers + Sailors Memorial Hospital, Wellsboro, PA
+            h5 Radiologic Technologist, August, 2004– December 2006
+            span &nbsp
+              li Performed radiologic procedures and provided patient care
+              li Responsibilities included working in the emergency room, operating room, nursing home, and outpatient radiology
+              li Performed film-screen radiography, CR, and DR, as well as fluoroscopy
 
-          h4 Abstract: 
-            h5 Levy et al., 2014. A breast analytics dashboard to allow near-real-time visualization of quality assurance data. J Clin Oncol 32, 2014 (suppl 30; abstr 186)
+            h4 Abstract: 
+              h5 Levy et al., 2014. A breast analytics dashboard to allow near-real-time visualization of quality assurance data. J Clin Oncol 32, 2014 (suppl 30; abstr 186)
 
-          h4 Presentation: 
-          h5 “The Evolution of BI-RADS,” Middle Tennessee Mammography Society. Nashville, TN, March, 2014
-            li Approved for one category A continuing education credit through the American Registry of Radiologic Technologists (ARRT)
-            li Discussed the history of the Breast Imaging- Reporting and Data System (BI-RADS) and how the guidelines have changed with advances in data technology
-            li Gave a brief overview of benchmarking standards and metrics that mammography centers should calculate and monitor
+            h4 Presentation: 
+            h5 “The Evolution of BI-RADS,” Middle Tennessee Mammography Society. Nashville, TN, March, 2014
+              li Approved for one category A continuing education credit through the American Registry of Radiologic Technologists (ARRT)
+              li Discussed the history of the Breast Imaging- Reporting and Data System (BI-RADS) and how the guidelines have changed with advances in data technology
+              li Gave a brief overview of benchmarking standards and metrics that mammography centers should calculate and monitor
 
-          h4 Awards
-            li Mammographer of the Year at Vanderbilt Breast Center, 2010
-            li Siemen’s Medical Solutions Award of Excellence for Outstanding Academic Performance, 2004
-          span &nbsp
+            h4 Awards
+              li Mammographer of the Year at Vanderbilt Breast Center, 2010
+              li Siemen’s Medical Solutions Award of Excellence for Outstanding Academic Performance, 2004
+            span &nbsp
           span &nbsp
     footer.site-footer &copy 2014 &nbsp Joy Pratt
 
