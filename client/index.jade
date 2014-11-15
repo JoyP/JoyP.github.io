@@ -56,18 +56,18 @@ html(ng-app='portfolio', lang='en')
         .col-xs-12
           .links
             h4 Contact Me:
-            span: a(href='http://github.com/JoyP').fa.fa-github.fa-lg &nbsp Github
-            span: a(href='https://www.linkedin.com/in/joypratt').fa.fa-linkedin-square.fa-lg &nbsp LinkedIn
-            span: a(href='https://twitter.com/joympratt').fa.fa-twitter.fa-lg &nbsp Twitter
+            span: a(href='http://github.com/JoyP' target='_blank').fa.fa-github.fa-lg &nbsp Github
+            span: a(href='https://www.linkedin.com/in/joypratt' target='_blank').fa.fa-linkedin-square.fa-lg &nbsp LinkedIn
+            span: a(href='https://twitter.com/joympratt' target='_blank').fa.fa-twitter.fa-lg &nbsp Twitter
             span: a(href='mailto:joympratt@gmail.com').fa.fa-envelope.fa-lg &nbsp Email
 
     .container-fluid
       .row#nav
         .col-xs-12
-          span(ng-click='toggleHome()') All &nbsp
-          span(ng-click='toggleProjects()') Projects &nbsp
-          span(ng-click='toggleSkills()') Skills &nbsp
-          span(ng-click='toggleResume()') Resume &nbsp
+          span(ng-click='toggleProjects()') Projects &nbsp &nbsp
+          span(ng-click='toggleSkills()') Skills &nbsp &nbsp
+          span(ng-click='toggleResume()') Resume &nbsp &nbsp
+          span(ng-click='toggleHome()') Show All &nbsp &nbsp
           
     .container-fluid
       .row#projects(ng-show='showProjects')
@@ -199,7 +199,7 @@ html(ng-app='portfolio', lang='en')
             h5 April 2007 - June 2014
             span &nbsp
 
-            h5 Senior Specialty Technologist, December 2010– June 2014
+            h5 Senior Specialty Technologist, December 2010 – June 2014
               li Super-user for Imagecast/Centricity, PowerScribe, and Hologic applications
               li Trained and supported new and current users of all systems and applications in the Breast Center
               li Coordinated between departments and support personnel to resolve any issues with PACS storage or retrieval
@@ -211,19 +211,19 @@ html(ng-app='portfolio', lang='en')
               li Performed data entry for imaging results, procedure information, and pathology results
             span &nbsp
 
-            h5 Mammographer, August 2007– December 2010
+            h5 Mammographer, August 2007 – December 2010
               li Performed mammography examinations
               li Performed data entry for imaging results, procedure information, and pathology results
               li Assisted in administration tasks and file room coverage when needed
             span &nbsp
 
-            h5 Administrative Assistant/Patient Care Tech, April 2007– August 2007
+            h5 Administrative Assistant/Patient Care Tech, April 2007 – August 2007
               li Worked as a patient services representative (PSR)
               li Performed a variety of job responsibilities while cross-training in mammography
             span &nbsp
 
             h4 Soldiers + Sailors Memorial Hospital, Wellsboro, PA
-            h5 Radiologic Technologist, August, 2004– December 2006
+            h5 Radiologic Technologist, August, 2004 – December 2006
             span &nbsp
               li Performed radiologic procedures and provided patient care
               li Responsibilities included working in the emergency room, operating room, nursing home, and outpatient radiology
